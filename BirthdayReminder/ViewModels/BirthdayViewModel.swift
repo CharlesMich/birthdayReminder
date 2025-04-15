@@ -19,7 +19,7 @@ class BirthdayViewModel: ObservableObject {
         storedBirthdays = birthdays
     }
     
-    private func addBirthday(name: String, date: Date) {
+     func addBirthday(name: String, date: Date) {
         let newBirthday = Birthday(name: name, date: date)
         birthdays.append(newBirthday)
         saveBirthdays()
